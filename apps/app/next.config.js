@@ -25,6 +25,7 @@ const nextConfig = {
     // this includes files from the monorepo base two directories up
     outputFileTracingRoot: path.join(__dirname, "../../"),
   },
+  staticPageGenerationTimeout: 1000,
 };
 
 if (parseInt(process.env.NEXT_PUBLIC_ENABLE_SENTRY || "0")) {
